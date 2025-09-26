@@ -2,7 +2,7 @@
 kaboom({
     width: 800,
     height: 600,
-    background: [0, 100, 200],
+    background: [221, 27, 252],
 });
 
 // Set the global gravity value for all physics objects.
@@ -10,7 +10,7 @@ setGravity(800);
 
 // --- Load Assets ---
 // We must load all sprites before we can use them in the game.
-loadSprite("apple", "https://kaboomjs.com/sprites/apple.png");
+loadSprite("bobo", "https://kaboomjs.com/sprites/bobo.png");
 // This was the missing line! Now the game knows what an "enemy" looks like.
 loadSprite("enemy", "https://kaboomjs.com/sprites/gigagantrum.png");
 
@@ -48,7 +48,7 @@ scene("main", () => {
 
     // --- The Player Character ---
     const player = add([
-        sprite("apple"),
+        sprite("bobo"),
         pos(100, 100),
         area({ scale: 0.7 }),
         body(),
